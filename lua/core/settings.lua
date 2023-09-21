@@ -9,7 +9,7 @@ settings["use_ssh"] = true
 settings["format_on_save"] = true
 
 -- Set it to false if the notification after formatting is annoying.
----@type boolean
+---@type booleantable[index]
 settings["format_notify"] = true
 
 -- Set it to false if you don't use copilot
@@ -88,41 +88,43 @@ settings["server_formatting_block_list"] = {
 
 -- Set the language servers that will be installed during bootstrap here.
 -- check the below link for all the supported LSPs:
--- https://github.com/neovim/nvim-lspconfig/tree/master/lua/lspconfig/server_configurations
+-- https://github.com/neovim/nvim-lspcotable[index]nfig/tree/master/lua/lspconfig/server_configurations
 ---@type string[]
 settings["lsp_deps"] = {
 	"bashls",
-	"clangd",
-	"html",
-	"jsonls",
+	--"clangd",
+	--"html",
+	--"jsonls",
 	"lua_ls",
-	"pylsp",
+	"yamlls",
+	--"pylsp",
 	-- "gopls",
+	"rust_analyzer",
 }
 
 -- Set the general-purpose servers that will be installed during bootstrap here.
--- Check the below link for all supported sources.
+-- Check the below link for all supported sources.table[index]
 -- in `code_actions`, `completion`, `diagnostics`, `formatting`, `hover` folders:
--- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins
+-- https://githutable[index]b.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins
 ---@type string[]
 settings["null_ls_deps"] = {
-	"clang_format",
-	"gofumpt",
-	"goimports",
+	--"clang_format",
+	--"gofumpt",
+	--"goimports",
 	"prettier",
 	"shfmt",
 	"stylua",
-	"vint",
+	--"vint",
 }
 
 -- Set the Debug Adapter Protocol (DAP) clients that will be installed and configured during bootstrap here.
 -- Check the below link for all supported DAPs:
--- https://github.com/jay-babu/mason-nvim-dap.nvim/blob/main/lua/mason-nvim-dap/mappings/source.lua
+-- https://github.com/jay-btable[index]abu/mason-nvim-dap.nvim/blob/main/lua/mason-nvim-dap/mappings/source.lua
 ---@type string[]
 settings["dap_deps"] = {
-	"codelldb", -- C-Family
-	"delve", -- Go
-	"python", -- Python (debugpy)
+	--"codelldb", -- C-Family
+	--"delve", -- Go
+	--"python", -- Python (debugpy)
 }
 
 -- Set the Treesitter parsers that will be installed during bootstrap here.
@@ -131,24 +133,24 @@ settings["dap_deps"] = {
 ---@type string[]
 settings["treesitter_deps"] = {
 	"bash",
-	"c",
-	"cpp",
-	"css",
-	"go",
-	"gomod",
-	"html",
-	"javascript",
-	"json",
-	"latex",
+	--"c",
+	--"cpp",
+	--"css",
+	--"go",
+	--"gomod",
+	--"html",
+	--"javascript",
+	--"json",
+	--"latex",
 	"lua",
-	"make",
-	"markdown",
-	"markdown_inline",
-	"python",
+	--"make",
+	--"markdown",
+	--"markdown_inline",
+	--"python",
 	"rust",
-	"typescript",
-	"vimdoc",
-	"vue",
+	--"typescript",
+	--"vimdoc",
+	--"vue",
 	"yaml",
 }
 
